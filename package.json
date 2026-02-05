@@ -1,0 +1,27 @@
+{
+  "name": "competi-o-de-conhecimentos-projeto-ifes-",
+  "version": "1.0.0",
+  "description": "Jogo de quem aperta o botão mais rápido. Com modelo no tinkercard, código e interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiaAFigueredo/Competi-o-de-Conhecimentos-Projeto-IFES-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/SofiaAFigueredo/Competi-o-de-Conhecimentos-Projeto-IFES-/issues"
+  },
+  "homepage": "https://github.com/SofiaAFigueredo/Competi-o-de-Conhecimentos-Projeto-IFES-#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "serialport": "^12.0.0",
+    "@serialport/parser-readline": "^12.0.0",
+    "socket.io": "^4.7.2"
+  }
+}

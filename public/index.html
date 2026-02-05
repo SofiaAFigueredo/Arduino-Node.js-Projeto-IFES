@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto-De-Conhecimentos</title>
+  <link rel='stylesheet' href='style.css'> 
+</head>  
+
+<body>
+  <!-- Necessário para conexão em tempo real node.js e página web -->
+  <script src="/socket.io/socket.io.js"></script> 
+
+  <div class="container">
+    <h1>Quem aperta mais rápido?</h1>
+    <h2>Botões Pressionados (em Tempo Real)</h3>
+      
+    <div id="log">
+      <img src="./img/homem-botão.png">
+      ola
+    </div>
+  </div>
+
+  <script>
+    const socket = io();
+    socket.on('buttonPress', (data) => {
+      const log = document.getElementById('log');
+      log.innerHTML += `<p>${data.message} (${new Date().toLocaleTimeString()})</p>`;
+      log.scrollTop = log.scrollHeight;
+    });
+  </script>
+</body>
+</html>

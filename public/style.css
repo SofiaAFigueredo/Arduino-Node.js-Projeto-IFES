@@ -1,0 +1,39 @@
+body{
+    font-family: Arial;
+    background-color: rgb(213, 255, 251);
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+h1, h2{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#log{ 
+    border: 1px solid #cecece; 
+    background-color: rgb(244, 244, 244);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 10px; 
+    height: 400px; 
+    overflow-y: scroll; 
+    position: relative; 
+}
+
+#log img {
+    position: absolute;
+    bottom: 15px; 
+    right: 20px; 
+    width: 30vw; 
+    min-width: 250px;
+    max-width: 400px;
+    height: auto;
+}
