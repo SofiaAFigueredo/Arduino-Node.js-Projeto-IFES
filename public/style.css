@@ -1,6 +1,6 @@
 body{
     font-family: Arial;
-    background-color: #e4fffc;
+    background-color: #fafafa;
 }
 
 .container{
@@ -15,27 +15,38 @@ body{
 
 h1, h2{
     font-family: 'Press Start 2P', cursive;
-    color: rgb(244, 244, 244);
-    text-shadow: 3px 1px 0 #000;
-    text-align: center;
+}
+
+h1{
+    color:#c7ffc8;
     border: 2px solid black;
+    background-color: rgb(255, 255, 255);
     background-image:
-        linear-gradient(45deg, #87CEEB 25%, transparent 25%),  
-        linear-gradient(-45deg, #87CEEB 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, #87CEEB 75%),
-        linear-gradient(-45deg, transparent 75%, #87CEEB 75%);
+        linear-gradient(45deg, #72c9eb 25%, transparent 25%),  
+        linear-gradient(-45deg, #18b7f7 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #18b7f7 75%),
+        linear-gradient(-45deg, transparent 75%, #72c9eb 75%);
     background-size: 40px 40px;
     background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+    text-align: center;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;    
 }
 
 h2{
     margin-top: 0px;
     padding: 5px;
+    text-align: left;
+    color: rgb(226, 90, 90);   
 }
 
 #log{ 
-    border: 1px solid #cecece; 
-    background-color: rgb(244, 244, 244);
+    border: 13px solid #ffafaf;
+    border-radius: 10px; 
+    background-color: #fff1f1;
     color: rgb(0, 0, 0);
     text-align: left;
     padding: 10px; 
@@ -49,7 +60,7 @@ h2{
     bottom: 15px; 
     right: 20px; 
     width: 30vw; 
-    min-width: 250px;
+    min-width: 200px;
     max-width: 400px;
     height: auto;
-}
+}   
